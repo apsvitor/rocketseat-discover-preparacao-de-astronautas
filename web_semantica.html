@@ -1,0 +1,193 @@
+<!-- 
+    WEB SEMÂNTICA
+
+    - Dar significado ao conteúdo HTML
+    - Auxilia na organização e manutenção da página
+    - Acessibilidade (leitores de páginas, por exemplo)
+    - Melhorar a prioridade com relação aos motores de busca. Sites bem estruturados tem mais chances de serem encontrados nas buscas.
+-->
+
+<!--
+    TAGS semânticas
+    Exemplo:
+
+-->
+<p>Escrevendo um parágrafo p</p>
+
+<blockquote>
+    Escrevendo um blockquote contendo uma citacao do autor: 
+            <cite>- Vitor Antonio</cite>
+</blockquote>
+
+<!--
+    Seções comuns em documentos HTML
+
+        - cabeçalho <header>
+        - navegação <nav>
+        - conteúdo principal <main>
+        - barra lateral <aside>
+        - rodapé <footer>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Logomarca
+        <nav>
+            <ul>
+                <li>item</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        conteúdo principal
+    </main>
+    <aside>
+        parte lateral
+    </aside>
+    <footer>
+        rodapé
+    </footer>
+</body>
+</html>
+
+<!--
+    <header> </header>
+
+    - Onde utilizar?
+        -> Quando no início da página, é visto como global
+        -> Pode ser usado em outros elementos semânticos como article, section,..
+        -> header dentro de header ou footer não faz sentido
+
+    - Múltiplos headers
+    - Não possui atributos específicos
+-->
+
+<!--
+    <nav> </nav>
+        - Navegação na página
+        - Não possuem atributos específicos, somente os globais
+-->
+
+<!--
+    <main> </main>
+
+        - Um por página
+        - Direto no <body></body>
+        - Conteúdo principal da página
+        - Não possuem atributos específicos, somente os globais
+-->
+<!--
+    <article></article>
+        - Artigo
+        - Conteúdos relacionados
+        - Não possuem atributos específicos, somente os globais
+-->
+
+<body>
+    
+    <main>
+        <h1>Receitas</h1>
+        <p>Esta é uma página de receitas</p>
+
+        <article>
+            <h2>Receita de torta de maçã</h2>
+            <p>Aqui está a receita:</p>
+        </article>
+
+        <article>
+            <h2>Receita de torta de limão</h2>
+            <p>Aqui está a receita:</p>
+        </article>
+    </main>
+</body>
+<br><br><br><br>
+<!--
+    <aside></aside>
+
+        - Conteúdos levemente relacionados ao conteúdo principal
+            -> explicações
+            -> glossários
+            -> links extras
+            -> biografia do autor
+            -> informações de perfil
+        - Não é necessariamente side bar
+        - Atributos: somente globais
+-->
+
+<!-- um site aqui...-->
+<hr>        <!-- desenhar uma linha -->
+<article>
+    <h2>Algum conteúdo</h2>
+    <p>explicações de coisas</p>
+    <!-- Glossário -->
+    <aside>
+        <h3>Glossário</h3>
+        <dl> <!-- description list-->
+            <dt>Termo 1</dt> <!-- termo -->
+            <dd>Explicação do termo 1</dd> <!-- descrição do termo -->
+            <dt>Termo 2</dt>
+            <dd>Explicação do termo 2</dd>
+        </dl>
+    </aside>
+</article>
+
+<hr>
+<!-- Conteúdo relacionado -->
+<aside>
+    <h3>Links relacionados</h3>
+    <ul>
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+    </ul>
+</aside>
+
+<!-- Publicidade relacionada -->
+<aside>
+    <strong>Patrocinador</strong>
+</aside>
+
+<hr>
+
+<!--
+    <footer></footer>
+    
+        - Geralmente no final da página
+        - Informações do autor, copyright, contato, sitemap, voltar ao topo
+        - Atributos: globais
+-->
+
+<footer>copyright &copy; - autor 2021</footer>
+
+<!--
+    <section></section>
+        - Onde utilizar:
+            -> Criar seções na página
+            -> Dica: colocar um título e depois o conteúdo
+        - Atributos: globais
+-->
+
+<section>
+    <h2>Contato</h2>
+    <p>Fale conosco</p>
+</section>
+
+<!--
+    Elementos não semânticos - uso genérico
+
+    <div></div>
+        - Usado se não conseguir achar um elemento de bloco semântico
+
+    <span></span>
+        - Usado se não conseguir achar um elemento de texto semântico
+    
+    Em ambas use atributos globais como id e class para entregar maior significado
+-->
+

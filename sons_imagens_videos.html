@@ -1,0 +1,159 @@
+<!--
+    <video>
+
+        - src
+        - controls
+        - se não funcionar: conteúdo fallback
+        
+        - source
+            -> src
+            -> type
+
+        - Sobre serviços de terceiros
+-->
+
+<video src="./diretorio.formatodovideo" 
+    controls>
+    <p>Este browser não suporta o vídeo</p>
+</video>
+
+<video 
+    controls
+    autoplay
+    preload=""
+    loop
+    muted
+>
+    <source src="./diretorio.formatodovideo" 
+        type="video/formatodovideo">
+
+    <p>Este browser não suporta o vídeo</p>
+</video>
+
+<!--
+    <audio>
+
+        - src
+        - controls
+        - se não funcionar: conteúdo fallback
+        
+        - source
+            -> src
+            -> type
+-->
+
+<audio controls autoplay muted loop>
+    <source src="./diretorio.formatodoaudio"
+        type="audio/mp3">
+    <source src="./diretorio.formatodoaudio"
+        type="audio/ogg">
+
+    <p>Seu navegador nao suporta audio (fallback).</p>
+</audio>
+
+<!--
+    <iframe>
+        - Não precisar hospedar o conteúdo na página
+        - Atributos:
+            -> src
+            -> height
+            -> width
+            -> title (acessibilidade)
+            -> allowfullscreen
+            -> frameborder
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lj1ZNYKSpII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- 
+    <img>
+        - src
+        - alt
+        - title
+        - width
+        - height
+        - adicionando link
+
+
+<a href="https://google.com">
+    <img src="https://source.unsplash.com/random"
+    alt="Imagem random"
+    title="colocar o mouse em cima para aparecer esse texto"
+    >
+</a>
+-->
+
+<!--
+    Praticando;
+    Colocar a imagem na página
+    https://rocketseat.com.br/icons/icon-48x48.png
+    Adicionar texto alternativo
+    Adicionar título
+    width = 500px
+    remover width e colocar height= 50px
+    link na imagem
+
+-->
+
+<a href="https://rocketseat.com.br/">
+    <img src="https://rocketseat.com.br/icons/icon-48x48.png" 
+    alt="Não carregou"
+    title="icone da rocketseat"
+    height="50px"
+    >
+</a>
+
+<!-- 
+    background-image
+
+        - tag style
+        - somente para estilo
+        - não é semântico e galta significado
+-->
+
+<p style="background-image: url(https://rocketseat.com.br/icons/icon-48x48.png); color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nobis ex eligendi perferendis voluptatibus. Ut iste quis necessitatibus doloribus deleniti laudantium corrupti facere animi, rerum nemo autem, debitis dignissimos repudiandae?</p>
+
+<!--
+    Títulos visíveis para as imagens
+    <figure>
+    <figurecaption>
+-->
+
+<figure>
+    <a href="https://google.com">
+        <img src="https://source.unsplash.com/random"
+        alt="Imagem de title"
+        title="colocar um título na imagem"
+        height="250px"
+        >
+    </a>
+    <figcaption>Colocar um título na imagem</figcaption>
+</figure>
+
+<!--
+    SVG <svg>
+        - É uma marcação, estilo html, mas não é para textos, e sim para fazer imagens.
+        - Possuímos elementos para gerar formas
+
+        - Imagem Rasterizada
+            -> imagem pixelada
+
+
+        - Imagem Vetorizada
+            -> imagem feita via algoritmo
+            Vantagem:
+                - mais leve
+                - mais detalhada
+                - maior acessibilidade e SEO
+                - pode ser editada via CSS ou atributos
+            Devantangens:
+                - Pode ser mais complicada de trabalhar
+                - Quanto mais complexa a imagem, mais trabalho para o navegador
+                - Navegadores mais antigos não possuem suporte a essa tag
+        
+        Para fotografias, ainda prefira usar imagens rasterizadas.
+-->
+
+<svg width="200" height="200">
+    <circle cx="100" cy="100" r="80" stroke="red" stroke-width="6" fill="blue" />
+</svg>
